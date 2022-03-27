@@ -9,16 +9,6 @@ var array_hinh = [
     "image/8.jpg",
     "image/9.jpg",
     "image/10.jpg",
-    "image/11.jpg",
-    "image/12.jpg",
-    "image/13.jpg",
-    "image/14.jpg",
-    "image/15.jpg",
-    "image/16.jpg",
-    "image/17.jpg",
-    "image/18.jpg",
-    "image/19.jpg",
-    "image/20.jpg",
 ]
 
 var index = 0;
@@ -30,17 +20,17 @@ function sau() {
     }
     var hinh = document.getElementById('show');
     hinh.src = array_hinh[index];
-    document.getElementById('dem').innerHTML = index + "/19";
+    document.getElementById('dem').innerHTML = index + "/9";
 }
 
 function truoc() {
     index--;
     if (index < 0) {
-        index=19;
+        index=9;
     }
     var hinh = document.getElementById('show');
     hinh.src = array_hinh[index];
-    document.getElementById('dem').innerHTML = index + "/19";
+    document.getElementById('dem').innerHTML = index + "/9";
 }
 
-setInterval("sau()",2000);
+setInterval("sau()",3000);
